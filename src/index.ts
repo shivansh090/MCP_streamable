@@ -2,11 +2,11 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import express, { Request, Response } from "express";
 import { randomUUID } from "crypto";
-import C_FApiDefinitions from "./tools/C_F/index.js";
+import C_FApiDefinitions from "./tools/api-tools/index.js";
 import { createToolHandler } from "./tools/toolUtils.js";
 import fs from "fs";
 import path from "path";
-import { zodToJsonSchema } from "zod-to-json-schema"; // Import zodToJsonSchema
+import { zodToJsonSchema } from "zod-to-json-schema"; 
 
 console.log("DEBUG: Content of C_FApiDefinitions:", JSON.stringify(C_FApiDefinitions, null, 2));
 
